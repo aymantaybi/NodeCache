@@ -1,4 +1,4 @@
-class Cache {
+class CacheServer {
 
     constructor() {
         this.obj = {};
@@ -38,4 +38,4 @@ class Cache {
 
 }
 
-module.exports = Cache;
+module.exports = CacheServer;

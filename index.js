@@ -1,12 +1,12 @@
 const express = require('express');
-const Cache = require('./cache');
+const Cache = require('./cacheServer');
 
 const port = 9696;
 
 const app = express();
 const cache = new Cache();
 
-app.use(express.json());
+app.use(express.json({limit: '5000mb'}));
 
 app.post('/set', (req, res) => {
     const { key, value } = req.body;
