@@ -1,2 +1,2 @@
 # NodeCache
- A simple express server to cache data using js Mapping
+ A simple express server to cache data using js Object
